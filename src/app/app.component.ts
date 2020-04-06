@@ -3,17 +3,20 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <h1>{{ title }} </h1>
+    <app-customers></app-customers>
   `
 })
 
 export class AppComponent implements OnInit {
-  title: string;
+
   constructor(){
 
   }
   ngOnInit(){
     //Service Call
-    this.title = 'Hello World';
+
   }
 }
+
+//ng g c customers
+//short for -> ng generate component "customers" -> create 4 files
